@@ -1,0 +1,23 @@
+.split-area-right-panel {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.split-area-left-panel {
+  display: inherit;
+  height: 100%;
+}
+
+.split-area-bar-handle {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 6px;
+
+  .split-area-bar {
+    height: 100%;
+    width: 2px;
+  }
+}

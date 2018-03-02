@@ -1,0 +1,9 @@
+<div class="split-area-left-panel" [style.width]="leftpaneWidth" [style.cursor]="move_cursor">
+  <ng-content></ng-content>
+</div>
+<div class="split-area-bar-handle"> <!-- [style.cursor]="collapsed ? '' : 'ew-resize'" (mousedown)="on_splitter_mouse_down($event)"> -->
+  <div class="split-area-bar"></div>
+</div>
+<div class="split-area-right-panel" [style.cursor]="move_cursor" [style.width]="rightpaneWidth">
+  <ng-content select="[right-pane]"></ng-content>
+</div>
