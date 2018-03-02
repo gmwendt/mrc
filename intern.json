@@ -1,0 +1,71 @@
+{
+  "defaultTimeout": "5000",
+  "browser": {
+    "loader": {
+      "script": "systemjs"
+    },
+    "plugins": [
+      "dist/intern-angular-shim.js"
+    ],
+    "suites": [
+      "app/app.component.spec",
+      "app/app.component.router.spec",
+      "app/bag/async-helper.spec",
+      "app/bag/bag.no-testbed.spec",
+      "app/bag/bag.spec",
+      "app/components/dashboard/dashboard-hero.component.spec",
+      "app/components/dashboard/dashboard.component.no-testbed.spec",
+      "app/components/dashboard/dashboard.component.spec",
+      "app/components/hero/hero-detail.component.no-testbed.spec",
+      "app/components/hero/hero-detail.component.spec",
+      "app/components/hero/hero-list.component.spec",
+      "app/components/about.component.spec",
+      "app/components/banner-inline.component.spec",
+      "app/components/banner.component.detect-changes.spec",
+      "app/components/banner.component.spec",
+      "app/components/welcome.component.spec",
+      "app/models/hero.spec",
+      "app/services/http-hero.service.spec",
+      "app/shared/highlight.directive.spec",
+      "app/shared/title-case.pipe.spec",
+      "app/shared/twain.component.spec"
+    ]
+  },
+  "functionalSuites": [
+    "dist-e2e/app.e2e-spec"
+  ],
+  "configs": {
+    "ci": {
+      "extends": [ "plain", "wdcoverage" ],
+      "environments+": [
+        { "browserName": "firefox" }
+      ]
+    },
+
+    "coverage": {
+      "reporters+": [ "htmlcoverage", "jsoncoverage" ],
+      "excludeInstrumentation": "(?:node_modules|testing|e2e)\\/|[.-]spec\\.js$|dist\\/[^\\/]+\\.js$"
+    },
+
+    "local": {
+      "extends": [ "pretty", "wdcoverage" ]
+    },
+
+    "plain": {
+      "reporters": [ "runner" ]
+    },
+
+    "pretty": {
+      "reporters": [ "pretty" ]
+    },
+
+    "wd": {
+      "tunnel": "selenium",
+      "environments": { "browserName": "chrome", "fixSessionCapabilities": "no-detect" }
+    },
+
+    "wdcoverage": {
+      "extends": [ "wd", "coverage" ]
+    }
+  }
+}
