@@ -1,7 +1,7 @@
 import { NgModule }         from '@angular/core';
 import { BrowserModule }    from '@angular/platform-browser';
 
-//Meterial Modules
+//Material Modules
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
 	MatExpansionModule, 
@@ -17,6 +17,9 @@ import { MrcComponent }     from './mrc/mrc.component';
 import { MrcHeaderComponent }     from './mrc/mrc-header/mrc-header.component';
 import { NavigationComponent }     from './mrc/navigation/navigation.component';
 
+//Pages
+import { PageProductsComponent } from './mrc/pages/page-products/page-products.component';
+
 //Shared Components
 import { SplitAreaComponent }     from './shared/split-area/split-area.component';
 
@@ -24,11 +27,11 @@ import { SplitAreaComponent }     from './shared/split-area/split-area.component
 	imports: [BrowserModule, BrowserAnimationsModule, MatExpansionModule, MatInputModule, MatTabsModule],
 	providers:    [  ],
 	declarations: [ AppComponent, 
-	
 									MrcComponent, MrcHeaderComponent, NavigationComponent,
-									
+									PageProductsComponent,
 									SplitAreaComponent ],
 	exports: [ BrowserAnimationsModule, MatExpansionModule, MatInputModule, MatTabsModule ],
-	bootstrap:    [ AppComponent ]
+	bootstrap:    [ AppComponent ],
+	entryComponents: [ PageProductsComponent ]
 })
 export class AppModule { }

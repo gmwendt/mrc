@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 export class OpenTabEvent {
-
+	name: string;
+	tabType: string;
 }
 
 @Component({
@@ -18,7 +19,20 @@ export class NavigationComponent {
 		this.openTab = new EventEmitter<OpenTabEvent>();
 	}
 
-	private openTab(tabName: string): void {
+	private listItemClicked(tabType: string): void {
+		var event: OpenTabEvent = { };
 
+		switch (tabType) {
+			case "produtos":
+				event.name = 'Produtos';
+				event.tabType = 'PageProductsComponent';
+				break;
+			
+			default:
+				// code...
+				break;
+		}
+		
+		this.openTab.emit(event);
 	}
 }

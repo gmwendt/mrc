@@ -1,6 +1,10 @@
 <mrc-header></mrc-header>
 <split-area leftpaneWidth="250px">
-	<navigation></navigation>
+	<navigation (openTab)="openTab($event)"></navigation>
 	<div></div>
-	<div style="width:10px;height:10px;background-color:red" right-pane></div>
+	<mat-tab-group>
+		<mat-tab *ngFor="let tab of _tabsOpen" label="{{tab.name}}">
+			<ng-container [ngComponentOutlet]="tab.tabType"></ng-container>
+		</mat-tab>
+	</mat-tab-group>
 </split-area>
