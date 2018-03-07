@@ -3,9 +3,11 @@ import { BrowserModule }    from '@angular/platform-browser';
 
 //Meterial Modules
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatExpansionModule} from '@angular/material';
-import {MatInputModule} from '@angular/material';
-import {MatFormFieldModule} from '@angular/material';
+import {
+	MatExpansionModule, 
+	MatInputModule, 
+	MatTabsModule
+} from '@angular/material';
 
 //App
 import { AppComponent }     from './app.component';
@@ -19,14 +21,14 @@ import { NavigationComponent }     from './mrc/navigation/navigation.component';
 import { SplitAreaComponent }     from './shared/split-area/split-area.component';
 
 @NgModule({
-	imports: [BrowserModule, BrowserAnimationsModule, MatExpansionModule, MatInputModule, MatFormFieldModule],
+	imports: [BrowserModule, BrowserAnimationsModule, MatExpansionModule, MatInputModule, MatTabsModule],
 	providers:    [  ],
 	declarations: [ AppComponent, 
 	
 									MrcComponent, MrcHeaderComponent, NavigationComponent,
 									
 									SplitAreaComponent ],
-	exports: [ BrowserAnimationsModule, MatExpansionModule, MatInputModule, MatFormFieldModule ],
+	exports: [ BrowserAnimationsModule, MatExpansionModule, MatInputModule, MatTabsModule ],
 	bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

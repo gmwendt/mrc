@@ -3,13 +3,16 @@
 	<mat-expansion-panel [hideToggle]="true" (click)="!exp1.expanded ? exp1.expanded = true : ''" #exp1>
 		<mat-expansion-panel-header expandedHeight="32px" collapsedHeight="32px">
 			<mat-panel-title>
-				MODEL
+				CADASTRO
 			</mat-panel-title>
 		</mat-expansion-panel-header>
 
-		<mat-form-field>
-			<input matInput placeholder="Favorite food" value="Sushi">
-		</mat-form-field>
+		<ul>
+		  <li (click)=""><a>Produtos</a></li>
+		  <li (click)=""><a>Estoque</a></li>
+		  <li (click)=""><a>Fornecedores</a></li>
+		  <li (click)=""><a>Clientes</a></li>
+		</ul>
 	</mat-expansion-panel>
 	
 	<mat-expansion-panel [hideToggle]="true" (click)="!exp2.expanded ? exp2.expanded = true : ''" #exp2>
