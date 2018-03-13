@@ -1,8 +1,9 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { PageProductsComponent } from '../pages/page-products/page-products.component';
 
 export class OpenTabEvent {
 	name: string;
-	tabType: string;
+	tabType: any;
 }
 
 @Component({
@@ -25,7 +26,7 @@ export class NavigationComponent {
 		switch (tabType) {
 			case "produtos":
 				event.name = 'Produtos';
-				event.tabType = 'PageProductsComponent';
+				event.tabType = PageProductsComponent;
 				break;
 			
 			default:
