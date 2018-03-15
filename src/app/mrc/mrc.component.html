@@ -2,7 +2,7 @@
 <split-area leftpaneWidth="250px">
 	<navigation (openTab)="openTab($event)"></navigation>
 	<div></div>
-	<mat-tab-group>
+	<mat-tab-group right-pane>
 		<mat-tab *ngFor="let tab of _tabsOpen" label="{{tab.name}}">
 			<ng-container [ngComponentOutlet]="tab.tabType"></ng-container>
 		</mat-tab>

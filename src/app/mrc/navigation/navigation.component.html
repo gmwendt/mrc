@@ -8,7 +8,14 @@
 		</mat-expansion-panel-header>
 
 		<ul>
-		  <li (click)="listItemClicked('produtos')"><a>Produtos</a></li>
+		  <!-- <li (click)="listItemClicked('produtos')"><a>Produtos</a></li> -->
+		  <li>
+		  	<button mat-button xPosition="100" [matMenuTriggerFor]="menu">Produtos</button>
+		  	<mat-menu #menu="matMenu">
+		  		<button mat-menu-item (click)="listItemClicked('produtos')">Novo</button>
+  				<button mat-menu-item>Listar</button>
+		  	</mat-menu>
+		  </li>
 		  <li (click)="listItemClicked('estoque')"><a>Estoque</a></li>
 		  <li (click)="listItemClicked('fornecedores')"><a>Fornecedores</a></li>
 		  <li (click)="listItemClicked('clientes')"><a>Clientes</a></li>

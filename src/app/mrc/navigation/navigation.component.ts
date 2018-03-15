@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
 import { PageProductsComponent } from '../pages/page-products/page-products.component';
 
 export class OpenTabEvent {
@@ -10,6 +10,7 @@ export class OpenTabEvent {
 	selector: 'navigation',
 	templateUrl: './navigation.component.html',
 	styleUrls: ['./navigation.component.css'],
+	encapsulation: ViewEncapsulation.None
 })
 export class NavigationComponent { 
 

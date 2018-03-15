@@ -1,23 +1,38 @@
-ul {
+navigation{
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: transparent;
-}
+  }
 
-li {
+  li {
     cursor: pointer;
 
     a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
     }
 
     a:hover {
-        background-color: rgb(245, 245, 245);
+      background-color: rgb(245, 245, 245);
     }
-}
+  }
 
+  .mat-button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .mat-button:hover {
+    background-color: rgb(245, 245, 245);
+  }
+
+  .mat-menu-item {
+    line-height: 36px;
+    height: 36px;
+  }
+}
