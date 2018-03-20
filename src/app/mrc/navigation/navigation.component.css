@@ -21,11 +21,25 @@ navigation li a:hover {
   background-color: whitesmoke;
 }
 
-navigation .mat-button {
+mrc .mat-button {
   width: 100%;
   text-align: left;
+  font-size: 10pt;
+  height: 30px;
+  line-height: 30px;
 }
 
-navigation .mat-button:hover {
+mrc .mat-button:hover {
   background-color: whitesmoke;
+}
+
+mrc .mat-expansion-panel-header {
+  font-size: 10pt;
+}
+
+.mat-menu-content .mat-menu-item {
+  font-size: 9pt;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
 }

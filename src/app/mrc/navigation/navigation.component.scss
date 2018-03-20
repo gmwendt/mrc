@@ -21,18 +21,33 @@ navigation{
       background-color: rgb(245, 245, 245);
     }
   }
+}
 
-  .mat-button {
+//Angular override
+mrc {
+	.mat-button {
     width: 100%;
     text-align: left;
+		font-size: 10pt;
+		height: 30px;
+    line-height: 30px;
   }
-
+	
+	//não está funcionando
   .mat-button:hover {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);		
   }
 
-  .mat-menu-item {
-    line-height: 36px;
-    height: 36px;
-  }
+	.mat-expansion-panel-header {
+		font-size: 10pt;
+	}
+}
+
+.mat-menu-content {
+	.mat-menu-item {
+		font-size: 9pt;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 8px;
+	}
 }

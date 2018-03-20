@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 import { PageProductsComponent } from '../pages/page-products/page-products.component';
 
 export class OpenTabEvent {
@@ -16,6 +17,9 @@ export class NavigationComponent {
 
 	@Output()
 	openTab: EventEmitter<OpenTabEvent>;
+	
+	//@ViewChild('menuProdutosTrigger')
+	//private menuProdutos: MatMenuTrigger;
 
 	constructor() {
 		this.openTab = new EventEmitter<OpenTabEvent>();
@@ -36,5 +40,9 @@ export class NavigationComponent {
 		}
 		
 		this.openTab.emit(event);
+	}
+	
+	private open_mat_menu(trigger: MatMenuTrigger): void {
+		trigger.openMenu();
 	}
 }

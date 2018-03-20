@@ -6,20 +6,24 @@
 				CADASTRO
 			</mat-panel-title>
 		</mat-expansion-panel-header>
-
-		<ul>
-		  <!-- <li (click)="listItemClicked('produtos')"><a>Produtos</a></li> -->
-		  <li>
-		  	<button mat-button xPosition="100" [matMenuTriggerFor]="menu">Produtos</button>
-		  	<mat-menu #menu="matMenu">
-		  		<button mat-menu-item (click)="listItemClicked('produtos')">Novo</button>
-  				<button mat-menu-item>Listar</button>
+		
+		<button mat-button [matMenuTriggerFor]="menuProdutos">Produtos</button>
+		<button mat-button>Produtos</button>		
+		<mat-menu #menuProdutos="matMenu">
+					<div> 
+						<button mat-menu-item (click)="listItemClicked('produtos')">Novo</button>
+						<button mat-menu-item>Listar</button>
+					</div>
 		  	</mat-menu>
+		<!--<ul>			
+		  <li>				
+		  	<button mat-button (click)="open_mat_menu(menuProdutosTrigger)">Produtos</button>
+		  					
 		  </li>
 		  <li (click)="listItemClicked('estoque')"><a>Estoque</a></li>
 		  <li (click)="listItemClicked('fornecedores')"><a>Fornecedores</a></li>
 		  <li (click)="listItemClicked('clientes')"><a>Clientes</a></li>
-		</ul>
+		</ul>-->
 	</mat-expansion-panel>
 	
 	<mat-expansion-panel [hideToggle]="true" (click)="!exp2.expanded ? exp2.expanded = true : ''" #exp2>
