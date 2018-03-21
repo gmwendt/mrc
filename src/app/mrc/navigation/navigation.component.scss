@@ -8,13 +8,15 @@ navigation{
   }
 
   li {
+    font-size: 10pt;
+    height: 25px;
+    line-height: 25px;
     cursor: pointer;
 
     a {
       display: block;
       color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
+      padding: 0 8px;
     }
 
     a:hover {
@@ -31,11 +33,6 @@ mrc {
 		font-size: 10pt;
 		height: 30px;
     line-height: 30px;
-  }
-	
-	//não está funcionando
-  .mat-button:hover {
-    background-color: rgb(245, 245, 245);		
   }
 
 	.mat-expansion-panel-header {

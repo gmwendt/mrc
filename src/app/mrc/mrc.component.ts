@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OpenPaneEvent } from './navigation/navigation.component';
 
 @Component({
 	selector: 'mrc',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class MrcComponent { 
 
-	private _tabsOpen: string[] = [];
+	private _mainPaneType: string[] = [];
 
-	private openTab(event: any): void {
-		this._tabsOpen.push(event);
+	private openPane(event: OpenPaneEvent): void {
+		this._mainPaneType = event.paneType;
 	}
 }

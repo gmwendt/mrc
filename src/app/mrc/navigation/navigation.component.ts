@@ -2,9 +2,9 @@ import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/cor
 import { MatMenuTrigger } from '@angular/material';
 import { PageProductsComponent } from '../pages/page-products/page-products.component';
 
-export class OpenTabEvent {
+export class OpenPaneEvent {
 	name: string;
-	tabType: any;
+	paneType: any;
 }
 
 @Component({
@@ -16,22 +16,22 @@ export class OpenTabEvent {
 export class NavigationComponent { 
 
 	@Output()
-	openTab: EventEmitter<OpenTabEvent>;
+	openPane: EventEmitter<OpenPaneEvent>;
 	
 	//@ViewChild('menuProdutosTrigger')
 	//private menuProdutos: MatMenuTrigger;
 
 	constructor() {
-		this.openTab = new EventEmitter<OpenTabEvent>();
+		this.openPane = new EventEmitter<OpenPaneEvent>();
 	}
 
-	private listItemClicked(tabType: string): void {
-		var event: OpenTabEvent = { };
+	private listItemClicked(paneType: string): void {
+		var event: OpenPaneEvent = { };
 
-		switch (tabType) {
+		switch (paneType) {
 			case "produtos":
 				event.name = 'Produtos';
-				event.tabType = PageProductsComponent;
+				event.paneType = PageProductsComponent;
 				break;
 			
 			default:
@@ -39,10 +39,6 @@ export class NavigationComponent {
 				break;
 		}
 		
-		this.openTab.emit(event);
-	}
-	
-	private open_mat_menu(trigger: MatMenuTrigger): void {
-		trigger.openMenu();
+		this.openPane.emit(event);
 	}
 }
