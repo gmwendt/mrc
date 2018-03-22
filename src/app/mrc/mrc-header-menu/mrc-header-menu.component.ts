@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { RibbonCadastroComponent } from '../ribbons/ribbon-cadastro/ribbon-cadastro.component';
 
 @Component({
 	selector: 'mrc-header-menu',
@@ -7,5 +8,14 @@ import { Component, ViewEncapsulation } from '@angular/core';
 	encapsulation: ViewEncapsulation.None
 })
 export class MrcHeaderMenuComponent {
-
+	private _selected: string;	
+	
+	private get ribbonType(): any {
+		switch (this._selected) {
+			case 'cadastro':
+				return RibbonCadastroComponent;
+			default:
+				return null;
+		}
+	}
 }

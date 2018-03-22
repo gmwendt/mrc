@@ -32,5 +32,6 @@ import { SplitAreaComponent }     from './shared/split-area/split-area.component
 									SplitAreaComponent ],
 	exports: [ MaterialModule, PagesModule ],
 	bootstrap:    [ AppComponent ],
+	entryComponents: [ RibbonCadastroComponent ]
 })
 export class AppModule { }

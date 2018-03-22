@@ -1,8 +1,9 @@
-<div id="mrc-header-menu">
-	<mat-tab-group>
-  	<mat-tab label="Cadastro">
-  		<ribbon-cadastro></ribbon-cadastro>
-  	</mat-tab>
-  	<mat-tab label="Financeiro">Content 2</mat-tab>
-	</mat-tab-group>
+<div class="header-menu-group">
+	<div class="header-menu-item" (click)="_selected = 'cadastro'" [ngClass]="{'selected': _selected == 'cadastro'}">
+		CADASTRO
+	</div>
+	<div class="header-menu-item" (click)="_selected = 'financeiro'" [ngClass]="{'selected': _selected == 'financeiro'}">
+		FINANCEIRO
+	</div>
 </div>
+<ng-template [ngComponentOutlet]="ribbonType"></ng-template>
