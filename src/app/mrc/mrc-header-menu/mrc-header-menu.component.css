@@ -1,0 +1,16 @@
+#mrc-header-menu {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #298dca;
+}
+
+mrc .mat-tab-label {
+  color: white;
+  height: 30px;
+}
+
+mrc .mat-tab-group.mat-primary .mat-ink-bar, mrc .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #1c628d;
+  height: 4px;
+}

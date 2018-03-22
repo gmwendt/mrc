@@ -1,0 +1,23 @@
+#mrc-header-menu {
+	display: block;
+	width: 100%;
+	height: 30px;
+	background-color: #298dca;
+}
+
+//Angular Material overrriden
+mrc {
+	.mat-tab-label {
+		color: white;
+		height: 30px;
+
+		.mat-tab-label-active {
+			//background-color: #2070a1;
+		}
+	}
+
+	.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  	background-color: #1c628d;
+  	height: 4px;
+	}		 
+}
