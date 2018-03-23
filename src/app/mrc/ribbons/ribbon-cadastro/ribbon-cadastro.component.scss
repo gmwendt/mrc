@@ -1,5 +1,48 @@
 .mrc-ribbon-cadastro {
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	background-color: #f2f2f2;
+	font-family: "Arial";
+	display: flex;
+
+	.mrc-ribbon-cadastro-group {
+		height: 100%;
+    width: fit-content; //teste
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-content {
+    	height: 100%;
+    	display: flex;
+    }
+
+    &-item {
+    	height: 100%;
+    	margin-left: 16px;
+	    padding: 0 4px;
+	    cursor: pointer;
+    	color: #4f4f4f;
+
+    	.icon {
+    		font-size: 24pt;
+    		text-align: center;
+    	}
+
+    	> span {
+    		font-size: 9pt;
+    	}
+    }
+
+    &-item:hover{
+    	background-color: #d2d2d2;
+    }
+
+    &-footer {
+	    width: 100%;
+	    text-align: center;
+	    font-size: 8pt;
+	    color: #bdbdbd;
+    }
+	}
 }
