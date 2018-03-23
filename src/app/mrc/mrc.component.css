@@ -1,3 +1,10 @@
-split-area {
+mrc {
   display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+mrc mrc-content {
+  display: flex;
+  overflow: auto;
 }

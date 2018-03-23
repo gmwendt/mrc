@@ -2,7 +2,6 @@
 	width: 100%;
 	height: 70px;
 	background-color: #f2f2f2;
-	font-family: "Arial";
 	display: flex;
 
 	.mrc-ribbon-cadastro-group {
@@ -37,6 +36,10 @@
     &-item:hover{
     	background-color: #d2d2d2;
     }
+		
+		&-item:active{
+    	background-color: #a8a8a8;
+    }
 
     &-footer {
 	    width: 100%;
@@ -44,5 +47,13 @@
 	    font-size: 8pt;
 	    color: #bdbdbd;
     }
+	}
+	
+	.mrc-ribbon-cadastro-divider {
+		height: 56px;
+    background-color: #bdbdbd;
+    margin-left: 16px;
+    margin-top: 8px;    
+    width: 1px;
 	}
 }
