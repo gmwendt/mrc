@@ -1,0 +1,26 @@
+{
+  "produtos": [
+    {
+      "code": 1,
+      "description": "json-server",
+      "descriptionNf": "typicode",
+      "profit-margin": 30,
+      "gtin": "1234567890",
+      "packing": "quilo",
+      "seasonal-product": false,
+      "direct-import": false,
+      "reg-date": "2018-03-25"
+    },
+    {
+      "code": 2,
+      "description": "batata kg",
+      "descriptionNf": "batata kg",
+      "profit-margin": 50,
+      "gtin": "1234567890",
+      "packing": "quilo",
+      "seasonal-product": false,
+      "direct-import": false,
+      "reg-date": "2018-03-25"
+    }
+   ]
+}
