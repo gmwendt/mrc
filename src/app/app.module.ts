@@ -18,7 +18,7 @@ import { RibbonCadastroComponent } from './mrc/ribbons/ribbon-cadastro/ribbon-ca
 
 //Services
 import { MrcContentService } from './mrc/mrc-content/mrc-content.service';
-import { ProductService } from './mrc/common/produto.service'
+import { ProductService } from './mrc/common/product.service';
 
 //Pages Modules
 import { PagesModule } from './mrc/pages/pages.module';

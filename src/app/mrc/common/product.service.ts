@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 
 export class Product {
-	public string Code;
-	public string Description;
-	public string DescriptionNf;
+	public Code: string;
+	public Description: string;
+	public DescriptionNf: string;
 	//TODO: public Array<ProductType> productTypes;
 	//TODO: public Array<ProductCategory> categories;
-	public number ProfitMargin;
-	public string GTIN;
+	public ProfitMargin: number;
+	public GTIN: string;
 	//TODO: public Account Accounting;
 	//TODO: public ProductStatus Status;
-	public string Packing;
-	public boolean SeasonalProduct;
-	public boolean DirectImportation;
-	public Date RegistrationDate;
+	public Packing: string;
+	public SeasonalProduct: boolean;
+	public DirectImportation: boolean;
+	public RegistrationDate: Date;
 }
 
 @Injectable()
