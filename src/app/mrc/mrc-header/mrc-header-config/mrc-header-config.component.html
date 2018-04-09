@@ -1,1 +1,5 @@
-<div>C</div>
+<div [matMenuTriggerFor]="appMenu">M</div>
+<mat-menu #appMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Importar XML</button>
+  <button mat-menu-item>Configurações</button>
+</mat-menu>

@@ -5,6 +5,14 @@ mrc {
   height: 100%;
 }
 
+mrc mrc-header {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 30px;
+  background-color: #298dca;
+}
+
 mrc mrc-content {
   display: flex;
   overflow: auto;

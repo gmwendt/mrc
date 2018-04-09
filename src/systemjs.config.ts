@@ -19,13 +19,13 @@ SystemJS.config({
 		'@angular/cdk/portal':'npm:/@angular/cdk/bundles/cdk-portal.umd.js', 
 		'@angular/cdk/scrolling':'npm:/@angular/cdk/bundles/cdk-scrolling.umd.js', 
 		'@angular/cdk/platform':'npm:/@angular/cdk/bundles/cdk-platform.umd.js', 
-		'@angular/cdk/keycodes':'npm:/@angular/cdk/bundles/cdk-keycodes.umd.js'
-		'@angular/cdk/layout':'npm:/@angular/cdk/bundles/cdk-layout.umd.js'
+		'@angular/cdk/keycodes':'npm:/@angular/cdk/bundles/cdk-keycodes.umd.js',
+		'@angular/cdk/layout':'npm:/@angular/cdk/bundles/cdk-layout.umd.js',
 		'@angular/cdk/coercion':'npm:/@angular/cdk/bundles/cdk-coercion.umd.js', 
 		'@angular/cdk/collections':'npm:/@angular/cdk/bundles/cdk-collections.umd.js', 
 		'@angular/cdk/rxjs':'npm:/@angular/cdk/bundles/cdk-rxjs.umd.js', 
-		'@angular/cdk/stepper':'npm:/@angular/cdk/bundles/cdk-stepper.umd.js'
-		'@angular/cdk/table':'npm:/@angular/cdk/bundles/cdk-table.umd.js'
+		'@angular/cdk/stepper':'npm:/@angular/cdk/bundles/cdk-stepper.umd.js',
+		'@angular/cdk/table':'npm:/@angular/cdk/bundles/cdk-table.umd.js',
 		'@angular/core': 'npm:@angular/core/bundles/core.umd.js',
 		'@angular/common': 'npm:@angular/common/bundles/common.umd.js',
 		'@angular/common/http': 'npm:@angular/common/bundles/common-http.umd.js',
