@@ -17,7 +17,7 @@
     "build:e2e:watch": "tsc -p e2e/ -w",
     "lint": "tslint -c tslint.json \"./src/**/*.ts\"",
     "serve": "lite-server -c=bs-config.json",
-    "start": "concurrently \"npm run build\" \"npm run serve\"",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
     "pretest": "npm run build",
     "test": "intern config=@local"
   },

@@ -11,6 +11,7 @@ import { AppComponent }     from './app.component';
 import { MrcComponent }     from './mrc/mrc.component';
 import { MrcContentComponent } from './mrc/mrc-content/mrc-content.component';
 import { MrcHeaderComponent }     from './mrc/mrc-header/mrc-header.component';
+import { MrcHeaderConfigComponent } from './mrc/mrc-header/mrc-header-config/mrc-header-config.component';
 import { MrcHeaderMenuComponent } from './mrc/mrc-header-menu/mrc-header-menu.component';
 import { NavigationComponent }     from './mrc/navigation/navigation.component';
 
@@ -32,7 +33,7 @@ import { SplitAreaComponent }     from './shared/split-area/split-area.component
 						PagesModule],
 	providers:    [ MrcContentService, ProductService ],
 	declarations: [ AppComponent, 
-									MrcComponent, MrcContentComponent, MrcHeaderComponent, MrcHeaderMenuComponent, NavigationComponent,
+									MrcComponent, MrcContentComponent, MrcHeaderComponent, MrcHeaderConfigComponent, MrcHeaderMenuComponent, NavigationComponent,
 									RibbonCadastroComponent,
 									SplitAreaComponent ],
 	exports: [ MaterialModule, PagesModule ],
