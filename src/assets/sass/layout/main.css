@@ -20,6 +20,17 @@ h1 {
   font-size: 9pt;
 }
 
+.mrc-global .mat-menu-content {
+  padding: 0;
+}
+
+.mrc-global .mat-menu-content .mat-menu-item {
+  font-size: 9pt;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+}
+
 html {
   height: 100%;
 }
