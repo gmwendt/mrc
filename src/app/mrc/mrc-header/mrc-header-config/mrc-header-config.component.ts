@@ -2,8 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'mrc-header-config',
-  template: '<div>C</div>',
-	//templateUrl: './mrc-header-config.html',
+	templateUrl: './mrc-header-config.component.html',
 	// styleUrls: ['./page-products.component.css'],
 	encapsulation: ViewEncapsulation.None
 })
