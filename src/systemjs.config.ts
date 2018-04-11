@@ -37,6 +37,7 @@ SystemJS.config({
 		'@angular/http': 'npm:@angular/http/bundles/http.umd.js',
 		'@angular/router': 'npm:@angular/router/bundles/router.umd.js',
 		'@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+		'jquery-xml2json': 'npm:jquery-xml2json/src/xml2json.js',
 		'rxjs': 'npm:rxjs',
 		'sinon': 'npm:sinon/pkg/sinon.js',
 		'sinon-chai': 'npm:sinon-chai/lib/sinon-chai.js',

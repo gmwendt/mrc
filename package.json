@@ -34,7 +34,8 @@
     "@angular/platform-browser-dynamic": "^5.2.7",
     "@angular/router": "^5.2.7",
     "core-js": "^2.4.1",
-    "rxjs": "^5.4.2",
+    "jquery-xml2json": "0.0.8",
+    "rxjs": "^5.5.9",
     "systemjs": "0.19.40",
     "tslib": "^1.7.1",
     "zone.js": "^0.8.12"

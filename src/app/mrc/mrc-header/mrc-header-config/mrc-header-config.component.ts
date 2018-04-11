@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import * as xml2json from 'jquery-xml2json';
 
 @Component({
   selector: 'mrc-header-config',
@@ -9,7 +10,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class MrcHeaderConfigComponent { 
 	private _filesExtensions: string = '.xml';
 	
-	private files_imported(files: FileList): void {
+	private files_imported(files: FileList): void {		
 		if (files.length < 1)
       return;
 		
@@ -17,7 +18,8 @@ export class MrcHeaderConfigComponent {
       var file = files[i];
 			this.readFileAsync(file).then(result => {
 				//TODO
-				console.log(result);
+				var json = xml2json(result);
+				console.log(json);
 			});
 		}
 	}
