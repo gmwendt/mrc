@@ -1,4 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+
+import { HttpService, MrcDataBaseHeaders } from './../../common/http.service';
+
 import * as xml2json from 'jquery-xml2json';
 
 @Component({
@@ -10,6 +13,8 @@ import * as xml2json from 'jquery-xml2json';
 export class MrcHeaderConfigComponent { 
 	private _filesExtensions: string = '.xml';
 	
+	constructor(private _http: HttpService) {}
+	
 	private files_imported(files: FileList): void {		
 		if (files.length < 1)
       return;
@@ -17,9 +22,9 @@ export class MrcHeaderConfigComponent {
 		for (var i = 0; i < files.length; i++) {
       var file = files[i];
 			this.readFileAsync(file).then(result => {
-				//TODO
-				var json = xml2json(result);
-				console.log(json);
+				//TODO: mensagem adicionado com sucesso
+				var json = xml2json(result);				
+				this._http.addInstance(json, MrcDataBaseHeaders.NFsentrada).subscribe(result => console.log(result));
 			});
 		}
 	}
